@@ -59,8 +59,21 @@ void deleteNode(LinkList* list, Node* node) {
 void printList(LinkList* list) {
     Node* current = list->head;
     while (current) {
-        printf("%d ", current->data);
+        printf("%d", current->data);
+        if (current->nextNode) {
+            printf(" ");
+        }
         current = current->nextNode;
     }
-    printf("\\n");
+}
+
+void freeList(LinkList* list) {
+    Node* current = list->head;
+    Node* next;
+    while (current != NULL) {
+        next = current->nextNode;
+        free(current);
+        current = next;
+    }
+    free(list);
 }

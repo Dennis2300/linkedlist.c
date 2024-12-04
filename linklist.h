@@ -6,7 +6,7 @@
 typedef struct Node {
     struct Node* nextNode;
     struct Node* prevNode;
-    int data; // Kan udvides til andre typer data
+    int data;
 } Node;
 
 // Definition af struct for en dobbelthægtet liste.
@@ -24,4 +24,4 @@ void deleteNode(LinkList* list, Node* node);
 void printList(LinkList* list);
 void freeList(LinkList* list);
 
-#endif // LINKLIST_H
+#endif
