@@ -8,6 +8,9 @@ This project implements a doubly linked list in C. It includes functions to crea
 - `linklist.c`: Source file containing the implementations of the functions.
 - `main.c`: Source file containing the `main` function to demonstrate the usage of the linked list functions.
 
+## More Notes
+[Notion Notes](https://discovered-hygienic-495.notion.site/Linked-List-15255baf0b8680abb3d0eeab535873c8?pvs=4)
+
 ## Usage
 
 To compile and run the program, use the following commands:
